@@ -1,0 +1,46 @@
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:20px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+    font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+    z-index:100;
+    animation-name: mover-botón;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    transition:0.6s;
+
+}
+
+.float:hover {
+	text-decoration: none;
+	color: #25d366;
+    background-color:#d1e6dc;
+}
+
+.my-float{
+    
+	margin-top:16px;
+}
+
+
+@keyframes mover-botón {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-10px);
+    }
+  }
+  .btn-fixed:hover {
+    background-color: #285943;
+    
+  }

@@ -1,0 +1,30 @@
+body{
+    background-color: #F1F6F9;
+}
+
+h2{
+    text-align: center;
+    color: #285943;
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+    font-weight:500;
+    margin-bottom: 3%;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+button {
+    background-color: #2e7733;
+    padding: 0.5rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.5s ease-in-out;
+    margin:0% 43%;
+  }
+  
+  button:hover {
+    background-color: #285943;
+  }

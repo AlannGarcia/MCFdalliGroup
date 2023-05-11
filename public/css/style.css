@@ -1,0 +1,389 @@
+html{
+  scroll-behavior:smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+   
+}
+
+
+#nadvar a{
+    color: #669787;
+    font-weight: 500;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom-color 0.3s ease-in-out;
+    margin-left: 20px;
+}
+#nadvar a:hover {
+    color:#285943;
+    border-bottom-color: #285943;
+}
+
+#logoInicio{
+    width: 500px;
+    margin: 6% 33% ;
+
+}
+
+#contenedorLogoInicio{
+  padding-top: 2%;
+  margin-bottom: 10%;
+}
+
+#contenedorLogoInicio p{
+    margin-top: 0%;
+    margin-left: 36%;
+    color:#285943;
+    font-size: 34px;
+    font-family:'Lora', serif;
+    font-weight:500;
+}
+
+/* sobreNosotros */
+#sobreNosotros{
+    margin-top: 7%;
+}
+
+#tituloSN {
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+    font-weight:500;
+}
+
+#tituloSN span{
+    color: #285943;
+}
+.linea {
+    border-top: 3px solid #8CD790;
+    position: absolute;
+    margin: 68px 10% ;
+    width: 30%;
+
+}
+
+#tituloSN img{
+    width: 15em;
+    margin-top: 1.2em;
+}
+
+#textoSN{
+    font-size: 23px;
+    margin-top: 7%;
+    font-family:'Lora', serif;
+    text-align: center;
+
+}
+
+#textoSN span{
+  color: #285943;
+  font-weight: 600;
+}
+
+/* Productos */
+#seccionProductos{
+    margin-top: 10%;
+}
+
+#seccionProductos h2{
+    text-align: center;
+    color: #285943;
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+    font-weight:500;
+    margin-bottom: 3%;
+}
+
+.producto {
+    width: 300px;
+    height: 350px;
+    margin-left: 3px;
+
+  }
+.producto:hover + .lineaP {
+    border-top: 5px solid #285943;
+    position: relative;
+  }
+
+#fotoProducto {
+    width: 300px;
+    height: 250px;
+    object-fit:cover;
+    cursor: pointer;
+}
+
+.nombreProducto{
+    margin-top: 20px;
+    text-align: center;
+    color: #285943;
+    font-family:'Lora', serif;
+
+}
+
+.lineaP {
+    border-top: 5px solid #8CD790;
+    position: relative;
+    margin-bottom: 0%;
+
+}
+.col{
+    margin-bottom: 3%;
+    max-width: 350px;
+}
+
+/* boton para inicio */
+.btn-fixed {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 999;
+    width: 50px;
+    height: 50px;
+    background-color: #8CD790;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    animation-name: mover-botón;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    transition:0.6s;
+
+}
+.btn-fixed img{
+    width: 40px;
+    margin-bottom: 0.4em;
+    align-items: center;
+}
+  @keyframes mover-botón {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-10px);
+    }
+  }
+  .btn-fixed:hover {
+    background-color: #285943;
+    
+  }
+  
+/* Info de contacto */
+  .titulos {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 30px;
+    margin-right: 13px;
+    
+  }
+  
+  .contactoTitulo{
+    font-size: 30px;
+    color: #285943;
+    font-family: 'Poppins', sans-serif;
+    font-weight:500;
+    margin-top: 9px;
+  }
+
+  .contactoInfo {
+    font-family:'Lora', serif;
+    user-select:text;
+    font-size: 16px;
+  }
+
+  .contactoInfo span{
+    color: #285943;
+    font-weight: 600;
+    margin-left: 10px;
+    text-align: center;
+  }
+
+#contacto{
+    box-shadow: 2px 2px 29px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    padding: 20px 20px;
+}
+
+/* Formulario */
+.tituloDeFormulario{
+    font-size: 30px;
+    color: #285943;
+    font-family: 'Poppins', sans-serif;
+    font-weight:600;
+    margin-top: 9px;
+    text-align: center;
+    animation-name: mover-titulo;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+
+}
+
+  @keyframes mover-titulo {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-4px);
+    }
+  }
+
+
+
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    font-family: 'Poppins', sans-serif;
+    
+  }
+  
+  
+  input,
+  textarea {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    transition: border-bottom-color 0.2s ease-in-out;
+    margin-bottom: 14px;
+   
+  }
+  
+  input:focus,
+  textarea:focus {
+    outline: none;
+    border-bottom-color: #285943;
+  }
+  
+  button {
+    background-color: #2e7733;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  button:hover {
+    background-color: #285943;
+  }
+  
+  /* Mapa de google */
+  #mapaConImg{
+    margin-bottom: 5%;
+  }
+  #mapaGoogle{
+    margin-bottom: 20px;
+  }
+
+  #imagenLocation img{
+    width: 400px;
+  }
+
+  #imagenLocation p{
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight:500;
+  }
+
+  #imagenLocation span{
+    color: #285943;
+  }
+
+  /* Footer */
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    background-color: #1c232e;
+    color: #fff;
+    font-family:'Lora', serif;
+    font-size: 15px;
+    
+  }
+  .left {
+    margin-left: 10%;
+    
+  }
+  
+  .right {
+    margin-right: 10%;
+  }
+  
+
+  
+
+/* pantallas de 480 px o menos */
+@media only screen and (max-width: 416px) {
+  body{
+    width: 100%; 
+    height: 100vh;
+    margin: 0; 
+    overflow-x: hidden; 
+}
+  /* Forma con inicio */
+#logoInicio{
+  width: 300px;
+  margin: 6% 12% ;
+}
+
+#contenedorLogoInicio p{
+  font-size: 20px;
+  margin: 0% 19%;
+
+}
+
+/* sobre nosotros */
+#tituloSN img{
+  width: 7em;
+ 
+}
+
+
+/* mapa google img*/
+#mapaGoogle{
+  margin-bottom: 20px;
+}
+#mapaGoogle{
+  width: 100%;
+  height: 200px;
+}
+
+
+/* Footer */
+footer {
+  padding: 10px;
+  width: 100%;
+  background-color: #1c232e;
+  color: #fff;
+  font-size: 9px;
+  
+}
+.left {
+  margin-left: 4%;
+  
+}
+
+.right {
+  margin-right: 4%;
+}
+
+
+
+}
