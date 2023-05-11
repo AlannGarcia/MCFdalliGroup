@@ -1,0 +1,111 @@
+html{
+    scroll-behavior:smooth;
+  }
+  *{
+      margin: 0;
+      padding: 0;
+      user-select: none;
+     
+  }
+  
+  
+  #nadvar a{
+      color: #615D6C;
+      font-weight: 500;
+      border-bottom: 1px solid transparent;
+      transition: border-bottom-color 0.3s ease-in-out;
+      margin-left: 20px;
+  }
+  #nadvar a:hover {
+      color:#6F8AB7;
+      border-bottom-color: #6F8AB7;
+  }
+  
+  #logoInicio{
+      width: 400px;
+      margin: 0 37% ;
+      margin-bottom: 14%;
+      display: inline-block;
+      vertical-align: middle;
+  }
+  
+  #contenedorLogoInicio{
+    padding-top: 2%;
+    margin-bottom: 10%;
+
+  }
+  /*FORMA PANIFICACION*/
+
+  #logoPanificacion {
+    position: absolute;
+    width: 450px; 
+    top: 10%;
+    left: 6%;
+    height: auto;
+    animation-name: mover-forma;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+#logoPanificacion:hover  {
+    transform: translateY(-15px) ;
+   
+  }
+  
+@keyframes mover-forma {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-15px);
+    }
+  } 
+  
+#logoPanificacion path{
+    transition: fill 1.3s;
+  }
+#logoPanificacion:hover path{
+    
+    fill: #05422e;
+    transition: 1.3s;
+}
+
+
+/*FORMA SERVICIOS*/
+
+#logoServicios {
+    position: absolute;
+    width: 420px; 
+    top: 16%;
+    right: 6%;
+    height: auto;
+    animation-name: mover-forma;
+    animation-duration: 1.2s;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+#logoServicios:hover  {
+    transform: translateY(-15px) ;
+   
+  }
+
+#logoServicios path{
+    transition: fill 1.3s;
+  }
+#logoServicios:hover path{
+    
+    fill: #8B575C;
+    transition: 1.3s;
+}
+
+text{
+    font-family: 'Lora', sans-serif;
+}
+
+/*FORMA sistemas*/
+
+
